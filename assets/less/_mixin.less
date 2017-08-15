@@ -1,0 +1,45 @@
+/**
+  * 用户存放minix方法
+  */
+
+// 相对浮动
+.absolute (@top: auto, @right: auto, @bottom: auto, @left: auto) {
+    position: absolute;
+    top: @top;
+    right: @right;
+    bottom: @bottom;
+    left: @left;
+}
+
+// 绝对浮动
+.fixed (@top: auto, @right: auto, @bottom: auto, @left: auto) {
+    position: fixed;
+    top: @top;
+    right: @right;
+    bottom: @bottom;
+    left: @left;
+}
+
+.animation (@params) {
+    -webkit-animation: @params;
+    -moz-animation: @params;
+    animation: @params;
+}
+
+.animation-delay (@params) {
+    -webkit-animation-delay: @params;
+    -moz-animation-delay: @params;
+    animation-delay: @params;
+}
+
+.transform (@params) {
+    -webkit-transform: @params;
+    -moz-transform: @params;
+    transform: @params;
+}
+
+.transition (@params) {
+    -webkit-transition: @params;
+    -moz-transition: @params;
+    transition: @params;
+}
