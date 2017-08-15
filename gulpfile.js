@@ -16,8 +16,8 @@ var gulp = require('gulp'),                    // 引入Gulp
 gulp.task('build-less', function () {
 	return gulp.src('assets/less/*.less')
 		.pipe(less())
-		.pipe(gulp.dest('assets/css'))
-		.pipe(notify({ message: 'less2css task ok' }));
+		.pipe(gulp.dest('assets/css'));
+		// .pipe(notify({ message: 'less2css task ok' }));
 });
 
 // 合并、压缩、重命名css
@@ -30,8 +30,8 @@ gulp.task('build-css', function() {
 		.pipe(gulp.dest('assets/css'))
     .pipe(rename({ suffix: `.min`}))
 		.pipe(minifycss())
-		.pipe(gulp.dest('dist/css'))
-		.pipe(notify({ message: 'css task ok' }));
+		.pipe(gulp.dest('dist/css'));
+		// .pipe(notify({ message: 'css task ok' }));
 });
 
 // 合并、压缩js文件 -- 废弃
