@@ -28,7 +28,7 @@ gulp.task('build-css', function() {
   ])
 		.pipe(concat('all.css'))
 		.pipe(gulp.dest('assets/css'))
-    .pipe(rename({ suffix: `.min`}))
+    .pipe(rename({ suffix: '.min'}))
 		.pipe(minifycss())
 		.pipe(gulp.dest('dist/css'));
 		// .pipe(notify({ message: 'css task ok' }));
