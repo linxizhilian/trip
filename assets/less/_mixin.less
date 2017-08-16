@@ -59,3 +59,18 @@
   -moz-transition: @params;
   transition: @params;
 }
+//单行及多行文本溢出控制
+.singleLimitWidth() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.doubleLimitWidth(@num:2) {
+  display: -webkit-box !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:@num;
+}

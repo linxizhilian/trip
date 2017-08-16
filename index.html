@@ -4,7 +4,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
 
   <!--link-css-->
   <!-- Bootstrap CSS -->
@@ -12,6 +12,54 @@
   <!-- Bootstrap theme -->
   <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/all.css">
+  
+  <style>
+    .msg-container {
+      margin: 0 auto;
+      width: 40px;
+      height: 40px;
+      background-color: #ddd;
+      /*border: 3px solid #655;*/
+      border: 3px solid;
+      /*outline: 5px solid deeppink;*/
+      -moz-border-top-colors: red red #ddd;
+      -moz-border-right-colors: red red #ddd;
+      -moz-border-bottom-colors: red red #ddd;
+      -moz-border-left-colors: red red #ddd;
+      outline: 1px dashed deeppink;
+      outline-offset: -1px;
+      box-shadow: 0 0 0 5px #655, 0 0 0 15px deeppink;
+      
+      background: url("assets/images/slide_1.png") no-repeat left top #4caf4c;
+      background-position: 100% 100%;
+      
+    }
+    .msg_1 {
+      margin: auto;
+      width: 240px;
+      height: 120px;
+      line-height: 120px;
+      text-align: center;
+      background-color: #655;
+      border-radius: 25px;
+      outline: 10px solid #333;
+      box-shadow: 0 0 0 10px #333;
+    }
+    .msg_2 {
+      margin: auto;
+      width: 240px;
+      height: 120px;
+      line-height: 1;
+      line-height: 120px;
+      text-align: center;
+      background: linear-gradient(to top right, #fb3 50%, #58a 50%);
+      background-size: 100% 100%;
+      overflow: hidden;
+    }
+    
+    
+  </style>
+  
 </head>
 
 <body id="index" class="main-container">
@@ -19,6 +67,18 @@
 
 </header>
 
+<!--<div class="msg-container">-->
+  <!---->
+<!--</div>-->
+
+<!--<div class="msg_1">-->
+<!--outline设计-->
+<!--</div>-->
+<!--<div class="msg_2">-->
+  <!--linear-gradient-->
+<!--</div>-->
+
+<!--备份-->
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -52,13 +112,67 @@
   </a>
 </div>
 
+<div class="row masonry-container">
+  
+  <div class="col-md-4 col-sm-6 item">
+    <div class="thumbnail">
+      <img src="http://lorempixel.com/200/200/abstract" alt="">
+      <div class="caption">
+        <p>Lorem ipsum dolor sit amet</p>
+      </div>
+    </div>
+  </div><!--/.item  -->
+  
+  <div class="col-md-4 col-sm-6 item">
+    <div class="thumbnail">
+      <div class="caption">
+        <p>Lorem ipsum dolor sit amet, deleniti unde dolore enim quas.</p>
+      </div>
+    </div>
+  </div><!--/.item  -->
+  
+  <div class="col-md-4 col-sm-6 item">
+    <div class="thumbnail">
+      <img src="http://pic1.win4000.com/wallpaper/4/5105d222a7b60.jpg" alt="">
+      <div class="caption">
+        <p>Lorem ipsum dolor sit amet, deleniti unde dolore enim quas.</p>
+      </div>
+    </div>
+  </div><!--/.item  -->
+  
+  <div class="col-md-4 col-sm-6 item">
+    <div class="thumbnail">
+      <img src="http://pic1.win4000.com/wallpaper/4/5105d222a7b60.jpg" alt="">
+      <div class="caption">
+        <p>Thumbnail label</p>
+      </div>
+    </div>
+  </div><!--/.item  -->
+  
+  <div class="col-md-4 col-sm-6 item">
+    <div class="thumbnail">
+      <img src="http://lorempixel.com/200/200/abstract" alt="">
+      <div class="caption">
+        <p>Lorem ipsum dolor sit amet, deleniti unde dolore enim quas.</p>
+      </div>
+    </div>
+  </div><!--/.item  -->
+  
+  <div class="col-md-4 col-sm-6 item">
+    <div class="thumbnail">
+      <img src="http://www.sucaifengbao.com/uploadfile/photo/meinvtupianbizhi/meinvtupianbizhi_813_100.jpg" alt="">
+      <div class="caption">
+        <p>Lorem ipsum dolor sit amet, deleniti unde dolore enim quas.</p>
+      </div>
+    </div>
+  </div>
 
+</div>
 
 
 
 <!--link-js-->
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
 </body>
 </html>

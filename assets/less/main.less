@@ -21,7 +21,8 @@ body {
 		padding: 5px;
 	}
 	font-family: '微软雅黑';
-	overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
 	padding-bottom: 180px;
 	header {
     height: 120px;
@@ -43,10 +44,47 @@ body {
       }
     }
 	}
+  .masonry-container {
+    margin: 0 auto;
+    & > * {
+      background-origin: border-box;
+    }
+    .thumbnail {
+      overflow: hidden;
+      position: relative;
+      background-origin: content-box;
+      border: none;
+      &:before {
+        margin-top: 100%;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .caption {
+        .absolute(auto, 3px, 0, 3px, 1);
+        padding: 0;
+        p {
+          text-indent: 5px;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 4;
+          color: #fff;
+          margin: 0;
+          .singleLimitWidth();
+          //background: linear-gradient(to bottom, #fff, #333);
+        }
+      }
+    }
+    
+  }
   @media screen and (min-width: 1380px) {
     #carousel-example-generic {
       max-width: 1380px;
       height: 600px;
+    }
+    .masonry-container {
+      max-width: 1380px;
     }
   }
   @media screen and (max-width: 1200px) {
@@ -54,11 +92,17 @@ body {
       max-width: 90%;
       height: 500px;
     }
+    .masonry-container {
+      max-width: 90%;
+    }
   }
   @media screen and (max-width: 750px) {
     #carousel-example-generic {
       max-width: 700px;
       height: 400px;
+    }
+    .masonry-container {
+      max-width: 100%;
     }
   }
 	footer {
